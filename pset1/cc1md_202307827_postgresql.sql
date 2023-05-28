@@ -187,6 +187,9 @@ CREATE TABLE uvv.lojas.pedidos_itens (
 			    CONSTRAINT pedidos_itens_pk PRIMARY KEY (produto_id, pedido_id)
 );
 
+--Adicionar comentário no banco de dados
+COMMENT ON DATABASE uvv is 'Banco de dados do pset que contem dados sobre as lojas da uvv';
+
 --Adicionar o cometariario na tabela e nas colunas
 COMMENT ON TABLE lojas.pedidos_itens IS 'tabela dos itens que contem nos pedidos';
 COMMENT ON COLUMN lojas.pedidos_itens.pedido_id IS 'numero de identificação do pedido';
